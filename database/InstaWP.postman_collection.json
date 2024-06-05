@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "a7811ed5-5a43-4358-9212-9ef03d6fffab",
+		"name": "InstaWP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5446975"
+	},
+	"item": [
+		{
+			"name": "Add money to wallet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDQ5MGFjMmY0NTk5MDMwNDY3NTE3MGRjNTcwOTM4ZWNhODY0YmY0MjkxMGFjNjdmMGM3ZGFjZjYyOGEzOTVkNmQ3MmRhOTI4NTBjMDk0YTAiLCJpYXQiOjE3MTc1OTIwMjMuMzgwMTI0LCJuYmYiOjE3MTc1OTIwMjMuMzgwMTI4LCJleHAiOjE3NDkxMjgwMjMuMzQ3NzAxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.mClx9-wh1xpwYKssmit6z1h4dmvw-JxPMtP_eGwUD0HnoIWU50aPs764mkdetGe3LTQ7dhC-iWYtxEWrEgCx6_dlOtIt1T70zpwxnGB5CheUQtQ7SSHT7g-7Brdbqpc3K53PyM7UQ4pQQgjBATcEQgsuPMNjDICFMPFgEMWgV1Gfjblws72KbNsUuSTIC14k8u2YW2eOIuTWJzXEngdOWHLdJQcmH06AyBZ6iMn0f0nVrtt16kCdqVDyqFYUKojaQ9Oo4-TBdQw81zyCDwmjcvGVju2VnIIF05EpO7p-_UEPXsys5y5FhlVztxM7MbWr_p0AZfqBetL1FkMDgvvjBKtN92ADkEGmFHkXi2bzGxpWd9Ta_CRqOZwVIoIYRD6yQC28WZi33msB_yV99AMj1WVmYQEyr7T6GxrcGC6Hwj_HRdQmWLci0i_nVBXW-vyGQJIE2edj5I5nJVgCl3P6jVy_3thGnL3Lo1E4PBgINAJjvmbzeMDlJ-9pIo3yMw8VNATAd_qBTqaZHTBe0izJXexciTQpWC216q7EaMy3vLK8hHQnSzOxwedoBRBQKULQLu5Zbe_rWTHnaiVNyTdCAQ6DrmoENOxWrjiqcS60scn2pLcCeFm96zKPkqQNCQ8jNujhIrokEm4pKlckjJ5NxgM8az0Na8FhSqn2h3kLsdE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "50",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8113/api/v1/add-money",
+					"host": [
+						"localhost"
+					],
+					"port": "8113",
+					"path": [
+						"api",
+						"v1",
+						"add-money"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy cookie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDQ5MGFjMmY0NTk5MDMwNDY3NTE3MGRjNTcwOTM4ZWNhODY0YmY0MjkxMGFjNjdmMGM3ZGFjZjYyOGEzOTVkNmQ3MmRhOTI4NTBjMDk0YTAiLCJpYXQiOjE3MTc1OTIwMjMuMzgwMTI0LCJuYmYiOjE3MTc1OTIwMjMuMzgwMTI4LCJleHAiOjE3NDkxMjgwMjMuMzQ3NzAxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.mClx9-wh1xpwYKssmit6z1h4dmvw-JxPMtP_eGwUD0HnoIWU50aPs764mkdetGe3LTQ7dhC-iWYtxEWrEgCx6_dlOtIt1T70zpwxnGB5CheUQtQ7SSHT7g-7Brdbqpc3K53PyM7UQ4pQQgjBATcEQgsuPMNjDICFMPFgEMWgV1Gfjblws72KbNsUuSTIC14k8u2YW2eOIuTWJzXEngdOWHLdJQcmH06AyBZ6iMn0f0nVrtt16kCdqVDyqFYUKojaQ9Oo4-TBdQw81zyCDwmjcvGVju2VnIIF05EpO7p-_UEPXsys5y5FhlVztxM7MbWr_p0AZfqBetL1FkMDgvvjBKtN92ADkEGmFHkXi2bzGxpWd9Ta_CRqOZwVIoIYRD6yQC28WZi33msB_yV99AMj1WVmYQEyr7T6GxrcGC6Hwj_HRdQmWLci0i_nVBXW-vyGQJIE2edj5I5nJVgCl3P6jVy_3thGnL3Lo1E4PBgINAJjvmbzeMDlJ-9pIo3yMw8VNATAd_qBTqaZHTBe0izJXexciTQpWC216q7EaMy3vLK8hHQnSzOxwedoBRBQKULQLu5Zbe_rWTHnaiVNyTdCAQ6DrmoENOxWrjiqcS60scn2pLcCeFm96zKPkqQNCQ8jNujhIrokEm4pKlckjJ5NxgM8az0Na8FhSqn2h3kLsdE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "quantity",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8113/api/v1/buy-cookie",
+					"host": [
+						"localhost"
+					],
+					"port": "8113",
+					"path": [
+						"api",
+						"v1",
+						"buy-cookie"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
